@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Main page"
-permalink: /
+permalink: ""
 ---
 
 # Introduction 
@@ -10,3 +10,6 @@ Hi there! My name is Kaye Mendoza. I am in my final year attending the Universit
 
 Feel free to look around in my resume and and click on the links I provided. To go back to this page, click on the title of this website above.
 
+# Experience 
+
+View my work experiences here: [Work Experience](https://kayerm.github.io/experiences/)
