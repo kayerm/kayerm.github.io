@@ -14,6 +14,10 @@ Feel free to look around in my resume and and click on the links I provided. To 
 
 View my work experiences here: [Work Experience](/experiences/)
 
+# Education 
+
+View my education here: [Education](/education/)
+
 # Contact
 
 Email: mendozaruwe@yahoo.com
