@@ -12,4 +12,4 @@ Feel free to look around in my resume and and click on the links I provided. To 
 
 # Experience 
 
-View my work experiences here: [Work Experience](https://kayerm.github.io/experiences/)
+View my work experiences here: [Work Experience](/experiences/)
