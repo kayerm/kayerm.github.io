@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Main page"
-permalink: "/KayeResume"
+permalink: "/"
 ---
 
 # Introduction 
