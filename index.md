@@ -18,6 +18,10 @@ View my work experiences here: [Work Experience](/experiences/)
 
 View my education here: [Education](/education/)
 
+# Projects
+
+View my projects here: [Projects](/projects/)
+
 # Contact
 
 Email: mendozaruwe@yahoo.com
