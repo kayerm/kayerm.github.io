@@ -6,4 +6,8 @@ This is my resume as part of my assignment for my COMP 2600 class. Contents in t
 
 ## Website 
 
-View my website here: [Website](https://kayerm.github.io/)
+* View my website here: [Website](https://kayerm.github.io/)
+
+## Credits
+
+* To publish my resume, I used [GitHub Pages](https://docs.github.com/en/pages/quickstart) to get started. 
