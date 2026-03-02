@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Projects"
-permalink: /projects/
+permalink: /KayeResume/projects/
 ---
 
 # Full Stack Flush 

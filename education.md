@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Education"
-permalink: /education/
+permalink: /KayeResume/education/
 ---
 
 # University of Manitoba _2021-2026_
