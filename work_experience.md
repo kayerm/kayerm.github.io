@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Work Experience"
-permalink: /KayeResume/experiences/
+permalink: /experiences/
 ---
 
 # Cash Accounting Clerk, _Tim Hortons_
