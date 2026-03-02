@@ -24,5 +24,6 @@ View my projects here: [Projects](/projects/)
 
 # Contact
 
-Email: mendozaruwe@yahoo.com
+Email: **mendozaruwe@yahoo.com**
+
 GitHub: [https://github.com/kayerm](https://github.com/kayerm)
