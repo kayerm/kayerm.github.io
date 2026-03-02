@@ -6,7 +6,7 @@ permalink: /projects/
 
 # Full Stack Flush 
 
-Course Project, Software Engineering 2, _University of Manitoba_
+Course Project - Software Engineering 2, _University of Manitoba_
 
 * Created an gambling web application that contains the games Blackjack and Poker with a team of 6 people focusing on improving front-end, creating test suites, cleaning up back-end code, and creating functional features.
 
@@ -14,7 +14,7 @@ Course Project, Software Engineering 2, _University of Manitoba_
 
 # IntelliCards
 
-Course Project, Software Engineering 1, _University of Manitoba_
+Course Project - Software Engineering 1, _University of Manitoba_
 
 * Collaborated with a team of 6 people to develop a flashcard maker app where users are able to create folders with flashcards inside, test themselves with their flashcards and analyze their stats based on their performance.
 
