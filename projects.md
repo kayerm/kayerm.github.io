@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Work Experience"
-permalink: /experiences/
+title: "Projects"
+permalink: /projects/
 ---
 
 # Full Stack Flush 
