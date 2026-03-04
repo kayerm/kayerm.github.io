@@ -15,15 +15,15 @@ With this README, I will go through the steps on how you too can host a website 
 
 ## Prerequisites
 
-* You will need a [GitHub](https://github.com/) account
-    * Log in to your account, but make sure you aren't hosting a website already! You can check it by typing in **[username].github.io** in your web browser. If nothing comes up, then you are good to go. If something comes up, then delete that repository. 
-    * Create an account with GitHub. It's free and quick!
+You will need a [GitHub](https://github.com/) account. GitHub allows you to host one website with your github name. Choose one that applies to you:
 
-Testing checklist here
+Log in to your account. 
+- [ ] Make sure you don't have a website running already by typing this one your web browser [your_username].github.io
+    * If an error code, 404 came up, that's good. 
+    * If not, then delete that repository as it will conflict with that website.
 
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+Create an account.
+- [ ] Make sure the username you pick is what you want your website to be. 
 
 ## Credits
 
