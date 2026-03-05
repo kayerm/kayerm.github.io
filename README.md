@@ -39,17 +39,57 @@ With this README, I will go through the steps on how you too can host a website 
 
 3. READMEs allow for you to give some context about your website. Therefore, under the **Add README** switch, turn it **On**.
 
-![Creating the repository picture](images/image_01.png)
+    ![Creating the repository picture](images/image_01.png)
 
-**NOTE**: _Since my website already exists after making this tutorial, `kayerm.github.io` is already made and taken by me. However, if it's your first time making your website, it should say "**`username.github.io` is available**."_
+    **NOTE**: _Since my website already exists after making this tutorial, `kayerm.github.io` is already made and taken by me. However, if it's your first time making your website, it should say "**`username.github.io` is available**."_
 
 4. After comparing your screen with the website, your can click **Create respository**. 
 
 5. You should now see a page similar to the page below. I will refer to this page as your "_Repository_."
 
-![Respository image](images/image_02.png)
+    ![Respository image](images/image_02.png)
 
-**NOTE:** _Only difference is that you should only have a README.md. We will make these files later on._
+    **NOTE:** _Only difference is that you should only have a README.md. We will make these files later on._
+
+6. On options on top, click on **Settings**.
+
+    ![Settings in Repository](images/image_05.png)
+
+7. With the options on the side, look for the **Code and automation** section, and click on the **Pages** tab. 
+
+8. Under **Build and deployment**, the dropdown under **Source** should be **Deploy from a branch**. 
+
+9. Under **Build and deployment**, the dropdown under **Branch** should be **None**. 
+
+    ![Steps 8 and 9](images/image_06.png)
+
+## Editing with Visual Studio Code (VSCode)
+
+1. Assuming it's already downloaded, open **Visual Studio Code**.
+
+2. On the top-left corner, click on **File**, **Open Folder**, and select the folder you want to download your repository in, then click **Select folder**. 
+
+3. Once your folder is opened, click on **Terminal**, and then **New Terminal**. A new tab should open under your VSCode. 
+
+    ![VSCode Terminal](images/image_03.png)
+
+4. In your _repository_, you will see a dropdown named **Code**. Click on it and a link should appear. Copy it. 
+
+    ![Code repository](images/image_04.png)
+
+5. In your _terminal_, copy the following code below and then press **Enter**.
+
+    ```
+    git clone https://github.com/kayerm/kayerm.github.io.git
+    ```
+    **NOTE**: "https://github.com/kayerm/kayerm.github.io.git" should be what you copied from Number 4. 
+
+6. To place your terminal into that repository, copy the following code below and then press **Enter**.
+
+    ```
+    cd .\kayerm.github.io\
+    ```
+    **NOTE**: If you only have your repository in your folder, you can also type `cd` and then **Tab**, then click **Enter**. 
 
 # FAQ
 
