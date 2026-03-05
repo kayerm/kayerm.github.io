@@ -31,7 +31,29 @@ With this README, I will go through the steps on how you too can host a website 
 
 # Instructions
 
+## Creating the Repository
+
+1. Refer to the upper-right side of your screen. Click the **"+"** and select **New Repository**.
+
+2. Under **Repository Name**, put [username].github.io. `username` should be what your username is on GitHub. For instance, my username is `kayerm`, therefore my Repository Name is `kayerm.github.io`.
+
+3. READMEs allow for you to give some context about your website. Therefore, under the **Add README** switch, turn it **On**.
+
+![Creating the repository picture](images/image_01.png)
+
+**NOTE**: _Since my website already exists after making this tutorial, `kayerm.github.io` is already made and taken by me. However, if it's your first time making your website, it should say "**`username.github.io` is available**."_
+
+4. After comparing your screen with the website, your can click **Create respository**. 
+
+5. You should now see a page similar to the page below. I will refer to this page as your "_Repository_."
+
+![Respository image](images/image_02.png)
+
+**NOTE:** _Only difference is that you should only have a README.md. We will make these files later on._
+
 # FAQ
+
+* Installing Jekyll
 
 # Further Resource/Readings
 
