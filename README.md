@@ -91,9 +91,52 @@ With this README, I will go through the steps on how you too can host a website 
     ```
     **NOTE**: If you only have your repository in your folder, you can also type `cd` and then **Tab**, then click **Enter**. 
 
+## Making our First Page
+
+1. In your VSCode, create a File named `_config.yml`. 
+
+2. Open the file and type the code below. This will be the base of our website. 
+
+    ```
+    title: [Title of your website]
+    description: [Summary/Purpose of what your website]
+    theme: jekyll-theme-hacker
+    ```
+    **NOTE**: _The theme of your website can be changed. A list of themes are provided in the [further resources/readings](#further-resourcereadings) section._
+
+3. On the top-right corner of the screen, click on **File** and then **Save**.
+
+4. To create our first page, the page that people will see when they first go to your website, create another File named `index.md`.
+
+5. Inside `index.md`, type the following header:
+
+    ```
+    ---
+    layout: default
+    title: "Main page"
+    permalink: "/"
+    ---
+    ```
+    To break everything down:
+
+    * _Layout_ being _default_ means that we will let our chosen theme be our layout in our main page. 
+    * _Title_ will be what is shown on your tab of where you are. 
+        ![Name of tab](images/image_07.png)
+    * _Permalink_ will be where the page is located. `/` means that this page will be seen in `https://kayerm.github.io/`, which is the landing page of your website.
+
+6. Under the header of `index.md`, your can put whatever you'd like. As seem below, I added headers and hyperlinks to organize my data. 
+
+    ![Main page in VSCode](images/image_08.png)
+
+    **NOTE**: _If you are unfamiliar with Markdown, which the language above is written in, I recommend reading more about it in [further resource/readings](#further-resourcereadings) section._
+
+## Adding More Pages
+
 # FAQ
 
 * Installing Jekyll
+
+* What does the directory look like
 
 # Further Resource/Readings
 
