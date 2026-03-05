@@ -121,7 +121,9 @@ With this README, I will go through the steps on how you too can host a website 
 
     * _Layout_ being _default_ means that we will let our chosen theme be our layout in our main page. 
     * _Title_ will be what is shown on your tab of where you are. 
+
         ![Name of tab](images/image_07.png)
+
     * _Permalink_ will be where the page is located. `/` means that this page will be seen in `https://kayerm.github.io/`, which is the landing page of your website.
 
 6. Under the header of `index.md`, your can put whatever you'd like. As seem below, I added headers and hyperlinks to organize my data. 
@@ -130,6 +132,26 @@ With this README, I will go through the steps on how you too can host a website 
 
     **NOTE**: _If you are unfamiliar with Markdown, which the language above is written in, I recommend reading more about it in [further resource/readings](#further-resourcereadings) section._
 
+7. All we need to do is save it again by going to the top-left corner going **File** and then **Save**.
+
+8. Now on your terminal, make sure your are on the appropriate directory. This should be `PS [filepath]\[username].github.io>`.
+
+    ![Directory](images/image_10.png)
+
+9. Now we will push our edits onto our repository. Type the following commands onto the terminal line-by-line. 
+
+    ```
+    git add .
+    git commit -m "Making our first page"
+    git push origin main
+    ```
+
+    If you encounter any errors while make this command. Please refer to the [FAQ](#faq) under Git Help. 
+
+10. Now go to your repository and wait until a check mark becomes present. You can do this by refreshing the page. GitHub is just making sure their checks go through. 
+
+11. Once you see your check mark, you can type in your website in your web browser, `username.github.io` where your first page should be present. 
+
 ## Adding More Pages
 
 # FAQ
@@ -137,6 +159,10 @@ With this README, I will go through the steps on how you too can host a website 
 * Installing Jekyll
 
 * What does the directory look like
+
+* Errors with GIT
+    * Downloading GIT
+    * Username
 
 # Further Resource/Readings
 
