@@ -150,19 +150,102 @@ With this README, I will go through the steps on how you too can host a website 
 
 10. Now go to your repository and wait until a check mark becomes present. You can do this by refreshing the page. GitHub is just making sure their checks go through. 
 
+    ![Loading changes](images/image_11.png)
+
+    ![Changes made](images/image_12.png)
+
 11. Once you see your check mark, you can type in your website in your web browser, `username.github.io` where your first page should be present. 
+
+    ![Running website](images/image_09.png)
 
 ## Adding More Pages
 
+1. Based on what you need, add another Markdown file (`filename.md`) inside your repository directory in VSCode.
+
+2. When you open the file, start it off with the header. 
+
+    ```
+    ---
+    layout: default
+    title: "Projects"
+    permalink: /projects/
+    ---
+    ```
+
+    If you can recall, 
+
+    * Make sure _layout_ is set to _default_ to make sure that your website will follow the theme. 
+    * The _title_ will be what shows up on the tab.
+
+        ![Projects Title](images/image_13.png)
+
+    * The _permalink_ will be where that page be located. In this scenario, we want the projects information to be different from the Main page. However, it is important that there is a way for you to get to `/projects/` from your `/` page or else your audience will not know this exists. 
+
+3. Now that you have the pages you need, and all these pages are linked through `index.md`, your website is good to go. Push your changes into your repository by typing the following into your directory again. 
+
+    ```
+    git add .
+    git commit -m "Making our first page"
+    git push origin main
+    ```
+
+4. Go to your repository and wait for the green check mark to show up. 
+
+5. When the green mark shows up, you can open your new website and make any necessary changes.
+
 # FAQ
 
-* Installing Jekyll
+## Directory
 
-* What does the directory look like
+* Your directory should look like this
 
-* Errors with GIT
-    * Downloading GIT
-    * Username
+    ```
+    username.github.io/
+    ├── _config.yml
+    ├── index.md     
+    ├── about.md     (optional page)
+    ├── projects.md  (optional page)
+    └── README.md
+    ```
+
+## Formatting
+
+### Changing the theme
+
+* To change the theme, check out **[GitHub Page Themes](https://github.com/pages-themes)** where it shows you what the themes will look like. 
+
+### Markdown
+
+* If you need any help with how to format your website with Markdown, check out **[Markdown tutorial](https://www.markdownguide.org/basic-syntax/)**.
+
+## Terminal
+
+### Downloading Git
+
+* If you get an error like this in your terminal when you first type in `git`, you might need to[ download Git](https://git-scm.com/install/windows) first and restart your VSCode.
+
+    ```
+    git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program.
+    ...
+    ```
+
+### Asking for a Username
+
+* When you are trying to `git commit`, but this error shows up: 
+
+    ```
+    *** Please tell me who you are. 
+    Run 
+
+    git config --global user.email "you@example.com" 
+    git config --global user.name "Your Name" 
+    
+    to set your account's default identity.
+    ```
+
+    All you have to do is telling GitHub who the author is for the changes. Therefore, you will simply follow the instruction with 
+    * `you@example.com` the email you created with GitHub
+    * `Your Name` the username you created with GitHub
 
 # Further Resource/Readings
 
