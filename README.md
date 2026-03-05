@@ -1,13 +1,13 @@
 # Table of Contents
 
-* Purpose
-* Prerequisites
-* Instructions
-* Further resources/readings
-* Frequently Asked Questions (FAQ)
-* Credits
+* [Purpose](#purpose)
+* [Prerequisites](#prerequisites)
+* [Instructions](#instructions)
+* [Further resources/readings](#further-resourcereadings)
+* [Frequently Asked Questions (FAQ)](#faq)
+* [Credits](#credits)
 
-# Description
+# Purpose
 
 The purpose of this README is to showcase how easy it is to host a static site generator. This will cater to those who have never hosted a website before and wants to start, as well as those who have never hosted a website with GitHub Pages before. 
 
@@ -27,20 +27,24 @@ With this README, I will go through the steps on how you too can host a website 
 
 2. You will also need a place to edit your repository I like to use Visual Studio Code. 
 
-    - [ ] Download [Visual Studio Code](https://code.visualstudio.com/). If you are on Windows, the download button is right on top of the page. 
+    - [ ] **Download [Visual Studio Code](https://code.visualstudio.com/)**. If you are on Windows, the download button is right on top of the page. 
+
+# Instructions
+
+# FAQ
 
 # Further Resource/Readings
 
-* View Markdown tutorials: [Markdown tutorial](https://www.markdownguide.org/basic-syntax/)
+* View Markdown tutorials: **[Markdown tutorial](https://www.markdownguide.org/basic-syntax/)**
     * Everything you know about Markdown syntax and best practices when coding in Markdown. 
 
-* View tutorials for Git: [Git Tutorial with clone](https://earthdatascience.org/workshops/intro-version-control-git/basic-git-commands/) and [Git tutorial without clone](https://graphite.com/guides/git-add-commit-push)
+* View tutorials for Git: **[Git Tutorial with clone](https://earthdatascience.org/workshops/intro-version-control-git/basic-git-commands/)** and **[Git tutorial without clone](https://graphite.com/guides/git-add-commit-push)**
     * This will explain in detail what it means when we clone, pull, push, and commit code to our repository. 
 
-* View more available themes: [GitHub Page Themes](https://github.com/pages-themes)
+* View more available themes: **[GitHub Page Themes](https://github.com/pages-themes)**
     * You can view what each theme looks like by clicking a theme you're interested in > Scrolling down to their README > find a hyperlink that says "_preview the theme to see what it looks like_."
 
-* View examples of README: [README examples](https://github.com/matiassingers/awesome-readme?tab=readme-ov-file)
+* View examples of README: **[README examples](https://github.com/matiassingers/awesome-readme?tab=readme-ov-file)**
     * A README is very important to have in your GitHub respository. It explains what your website is about, how to check it out, and any comments you want to include but not on your website. 
 
 # Credits
