@@ -14,7 +14,7 @@
 * [Frequently Asked Questions (FAQ)](#faq)
 * [Credits](#credits)
 
-# Purpose
+# :point_up: Purpose
 
 The purpose of this README is to showcase how easy it is to use a static site generator. The goal of this tutorial is to cater to those who have never hosted a website before and wants to start. I will go through the steps on how you too can host a website like [this one](https://kayerm.github.io/). 
 
