@@ -18,7 +18,7 @@
 
 The purpose of this README is to showcase how easy it is to use a static site generator. The goal of this tutorial is to cater to those who have never hosted a website before and wants to start. I will go through the steps on how you too can host a website like [this one](https://kayerm.github.io/). 
 
-# Prerequisites
+# :triangular_flag_on_post: Prerequisites
 
 1. **Log in or Create an account with GitHub**. Make sure the username you pick or log in with is what you want your website to be. 
 
@@ -30,7 +30,7 @@ The purpose of this README is to showcase how easy it is to use a static site ge
 
 5. Download Bundler and Jekyll by opening a **Command Prompt** and typing in `gem install jekyll bundler`. This download may take a while.
 
-# Instructions
+# :memo: Instructions
 
 ## Creating the Repository
 
@@ -211,7 +211,7 @@ The purpose of this README is to showcase how easy it is to use a static site ge
 
 4. Go to your repository and wait for the green check mark to show up. 
 
-# FAQ
+# :speech_balloon: FAQ
 
 ## Getting Started
 
@@ -243,7 +243,7 @@ The purpose of this README is to showcase how easy it is to use a static site ge
         * `you@example.com` the email you created with GitHub
         * `Your Name` the username you created with GitHub
 
-# Further Resource/Readings
+# :books: Further Resource/Readings
 
 * View Markdown tutorials: **[Markdown tutorial](https://www.markdownguide.org/basic-syntax/)**
     * Everything you know about Markdown syntax and best practices when coding in Markdown. 
@@ -257,7 +257,7 @@ The purpose of this README is to showcase how easy it is to use a static site ge
 * View examples of README: **[README examples](https://github.com/matiassingers/awesome-readme?tab=readme-ov-file)**
     * A README is very important to have in your GitHub respository. It explains what your website is about, how to check it out, and any comments you want to include but not on your website. 
 
-# Credits
+# :cherry_blossom: Credits
 
 Credit goes to: 
 
