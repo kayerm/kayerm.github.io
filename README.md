@@ -8,30 +8,27 @@
     * [Making our First Page](#making-our-first-page)
     * [Adding More Pages](#adding-more-pages)
 * [Further resources/readings](#further-resourcereadings)
+    * [Getting Started](#getting-started)
+    * [Website](#website)
+    * [Terminal](#terminal) 
 * [Frequently Asked Questions (FAQ)](#faq)
 * [Credits](#credits)
 
 # Purpose
 
-The purpose of this README is to showcase how easy it is to host a static site generator. This will cater to those who have never hosted a website before and wants to start, as well as those who have never hosted a website with GitHub Pages before. 
-
-With this README, I will go through the steps on how you too can host a website like [this one](https://kayerm.github.io/). 
+The purpose of this README is to showcase how easy it is to use a static site generator. The goal of this tutorial is to cater to those who have never hosted a website before and wants to start. I will go through the steps on how you too can host a website like [this one](https://kayerm.github.io/). 
 
 # Prerequisites
 
-1. You will need a [GitHub](https://github.com/) account. GitHub allows you to host one website with your github name. Choose one that applies to you:
+1. **Log in or Create an account with GitHub**. Make sure the username you pick or log in with is what you want your website to be. 
 
-    - [ ] **Log in to your account**. 
-        * Make sure you don't have a website running already by typing this one your web browser [your_username].github.io
-            * If an error code, 404 came up, that's good. 
-            * If not, then delete that repository as it will conflict with that website.
+2. **Download [Visual Studio Code](https://code.visualstudio.com/)**. 
 
-    - [ ] **Create an account**.
-        * Make sure the username you pick is what you want your website to be.
+3. **Install [Git](https://git-scm.com/install/windows)**. 
 
-2. You will also need a place to edit your repository I like to use Visual Studio Code. 
+4. **Download [Ruby](https://rubyinstaller.org/downloads/)**. When you open the link, it should be ready to download `Ruby+Devkit 3.4.8-1 (x64)`.
 
-    - [ ] **Download [Visual Studio Code](https://code.visualstudio.com/)**. If you are on Windows, the download button is right on top of the page. 
+5. Download Bundler and Jekyll by opening a **Command Prompt** and typing in `gem install jekyll bundler`. This download may take a while.
 
 # Instructions
 
@@ -39,7 +36,8 @@ With this README, I will go through the steps on how you too can host a website 
 
 1. Refer to the upper-right side of your screen. Click the **"+"** and select **New Repository**.
 
-2. Under **Repository Name**, put [username].github.io. `username` should be what your username is on GitHub. For instance, my username is `kayerm`, therefore my Repository Name is `kayerm.github.io`.
+2. Under **Repository Name**, input `[username].github.io`. 
+    * `username` should be what your username is on GitHub. For instance, my username is `kayerm`, therefore my Repository Name is `kayerm.github.io`.
 
 3. READMEs allow for you to give some context about your website. Therefore, under the **Add README** switch, turn it **On**.
 
@@ -47,33 +45,31 @@ With this README, I will go through the steps on how you too can host a website 
 
     **NOTE**: _Since my website already exists after making this tutorial, `kayerm.github.io` is already made and taken by me. However, if it's your first time making your website, it should say "**`username.github.io` is available**."_
 
-4. After comparing your screen with the website, your can click **Create respository**. 
-
-5. You should now see a page similar to the page below. I will refer to this page as your "_Repository_."
+4. Click **Create respository**. You should now see a page similar to the page below. I will refer to this page as your "_Repository_."
 
     ![Respository image](images/image_02.png)
 
-    **NOTE:** _Only difference is that you should only have a README.md. We will make these files later on._
+    **NOTE**: _Only difference is that you should only have a `README.md`. We will make these files later on._
 
-6. On options on top, click on **Settings**.
+5. On options on top, click on **Settings**.
 
     ![Settings in Repository](images/image_05.png)
 
-7. With the options on the side, look for the **Code and automation** section, and click on the **Pages** tab. 
+6. With the options on the side, look for the **Code and automation** section, and click on the **Pages** tab. 
 
-8. Under **Build and deployment**, the dropdown under **Source** should be **Deploy from a branch**. 
+7. Under **Build and deployment**, the dropdown under **Source** should be **Deploy from a branch**. 
 
-9. Under **Build and deployment**, the dropdown under **Branch** should be **None**. 
+8. Under **Build and deployment**, the dropdown under **Branch** should be **None**. 
 
     ![Steps 8 and 9](images/image_06.png)
 
 ## Editing with Visual Studio Code (VSCode)
 
-1. Assuming it's already downloaded, open **Visual Studio Code**.
+1. Open **Visual Studio Code**.
 
-2. On the top-left corner, click on **File**, **Open Folder**, and select the folder you want to download your repository in, then click **Select folder**. 
+2. On the top-left corner, click on **File**, select **Open Folder**, and select the folder you want to download your repository in, then click **Select folder**. 
 
-3. Once your folder is opened, click on **Terminal**, and then **New Terminal**. A new tab should open under your VSCode. 
+3. Once your folder is opened, click on **Terminal**, and then **New Terminal**. A new tab should open under your _VSCode_. 
 
     ![VSCode Terminal](images/image_03.png)
 
@@ -84,35 +80,61 @@ With this README, I will go through the steps on how you too can host a website 
 5. In your _terminal_, copy the following code below and then press **Enter**.
 
     ```
-    git clone https://github.com/kayerm/kayerm.github.io.git
+    git clone https://github.com/username/username.github.io.git
     ```
-    **NOTE**: "https://github.com/kayerm/kayerm.github.io.git" should be what you copied from Number 4. 
 
-6. To place your terminal into that repository, copy the following code below and then press **Enter**.
+    **NOTE**: If there is an error associated with Git, Git was not properly installed. Refer to [prerequisites](#prerequisites).
+
+6. To go into that folder, copy the following code below and then press **Enter**.
 
     ```
-    cd .\kayerm.github.io\
+    cd .\username.github.io\
     ```
-    **NOTE**: If you only have your repository in your folder, you can also type `cd` and then **Tab**, then click **Enter**. 
+
+7. Type the following code below to create a new Jekyll site in the repository. 
+
+    ```
+    jekyll new --skip-bundle .
+    ```
+
+8. In your directory, open `Gemfile`. 
+
+9. Inside the `Gemfile`, make the changes in the following line numbers. Don't forget to **Save** the file after.
+
+    ```
+    10  # gem "jekyll", "~> 4.4.1"
+    12  # gem "minima", "~> 2.5"
+    15  gem "github-pages", group: :jekyll_plugins
+    ```
+
+10. In your directory, open `.gitignore`.
+
+11. Inside the `.gitignore`, add the line `Gemfile.lock`. Don't forget to **Save** the file after.
 
 ## Making our First Page
 
-1. In your VSCode, create a File named `_config.yml`. 
+1. In your _VSCode_, open the file named `_config.yml`.
 
-2. Open the file and type the code below. This will be the base of our website. 
+2. Edit the following file based on information you know about your website. This is what I have. Don't forget to **Save** your changes.
 
     ```
-    title: [Title of your website]
-    description: [Summary/Purpose of what your website]
-    theme: jekyll-theme-hacker
+    title: Kaye Mendoza's Resume
+    email: mendozaruwe@yahoo.com
+    baseurl: ""
+    url: "https://kayerm.github.io"
+    github_username: kayerm
+
+    # I had to change "theme" to "remote-theme"
+    remote_theme: pages-themes/hacker@v0.2.0 
+    plugins:
+        - jekyll-remote-theme
     ```
-    **NOTE**: _The theme of your website can be changed. A list of themes are provided in the [further resources/readings](#further-resourcereadings) section._
 
-3. On the top-right corner of the screen, click on **File** and then **Save**.
+    **NOTE**: _A list of themes is provided in the [further resources/readings](#further-resourcereadings) section._
 
-4. To create our first page, the page that people will see when they first go to your website, create another File named `index.md`.
+3. To create our first page, open the file named `index.markdown` or `index.md`.
 
-5. Inside `index.md`, type the following header:
+4. Inside `index.md`, change the head to the one below. 
 
     ```
     ---
@@ -121,7 +143,6 @@ With this README, I will go through the steps on how you too can host a website 
     permalink: "/"
     ---
     ```
-    To break everything down:
 
     * _Layout_ being _default_ means that we will let our chosen theme be our layout in our main page. 
     * _Title_ will be what is shown on your tab of where you are. 
@@ -130,19 +151,17 @@ With this README, I will go through the steps on how you too can host a website 
 
     * _Permalink_ will be where the page is located. `/` means that this page will be seen in `https://kayerm.github.io/`, which is the landing page of your website.
 
-6. Under the header of `index.md`, your can put whatever you'd like. As seem below, I added headers and hyperlinks to organize my data. 
+5. Under the header of `index.md`, your can put whatever you'd like. As seem below, I added headers and hyperlinks to organize my data. Don't forget to **Save** your changes. 
 
     ![Main page in VSCode](images/image_08.png)
 
-    **NOTE**: _If you are unfamiliar with Markdown, which the language above is written in, I recommend reading more about it in [further resource/readings](#further-resourcereadings) section._
+    **NOTE**: _Read more about Markdown in [further resource/readings](#further-resourcereadings) section._
 
-7. All we need to do is save it again by going to the top-left corner going **File** and then **Save**.
-
-8. Now on your terminal, make sure your are on the appropriate directory. This should be `PS [filepath]\[username].github.io>`.
+6. Now on your terminal, make sure your are on the appropriate directory. This should be `PS [filepath]\username.github.io>`.
 
     ![Directory](images/image_10.png)
 
-9. Now we will push our edits onto our repository. Type the following commands onto the terminal line-by-line. 
+7. Now we will push our edits onto our repository. Type the following commands onto the terminal line-by-line. 
 
     ```
     git add .
@@ -150,21 +169,19 @@ With this README, I will go through the steps on how you too can host a website 
     git push origin main
     ```
 
-    If you encounter any errors while make this command. Please refer to the [FAQ](#faq) under Git Help. 
-
-10. Now go to your repository and wait until a check mark becomes present. You can do this by refreshing the page. GitHub is just making sure their checks go through. 
+8. Now go to your repository and wait until a check mark becomes present. You can do this by refreshing the page. GitHub is just making sure their checks go through. 
 
     ![Loading changes](images/image_11.png)
 
     ![Changes made](images/image_12.png)
 
-11. Once you see your check mark, you can type in your website in your web browser, `username.github.io` where your first page should be present. 
+9. Once you see your check mark, you can type in your website in your web browser, `username.github.io` where your first page should be present. 
 
     ![Running website](images/image_09.png)
 
 ## Adding More Pages
 
-1. Based on what you need, add another Markdown file (`filename.md`) inside your repository directory in VSCode.
+1. Based on what you need, add another Markdown file (`filename.md`) inside your repository directory in _VSCode_.
 
 2. When you open the file, start it off with the header. 
 
@@ -178,7 +195,6 @@ With this README, I will go through the steps on how you too can host a website 
 
     If you can recall, 
 
-    * Make sure _layout_ is set to _default_ to make sure that your website will follow the theme. 
     * The _title_ will be what shows up on the tab.
 
         ![Projects Title](images/image_13.png)
@@ -189,67 +205,43 @@ With this README, I will go through the steps on how you too can host a website 
 
     ```
     git add .
-    git commit -m "Making our first page"
+    git commit -m "Making our second page"
     git push origin main
     ```
 
 4. Go to your repository and wait for the green check mark to show up. 
 
-5. When the green mark shows up, you can open your new website and make any necessary changes.
-
 # FAQ
 
-## Directory
+## Getting Started
 
-* Your directory should look like this
+* **Question**: No matter how much I try to undertstand [Creating the Repository](#creating-the-repository) and [Editing with Visual Studio Code (VSCode)](#editing-with-visual-studio-code-vscode) sections, I am still so lost. What can I do?
 
-    ```
-    username.github.io/
-    ├── _config.yml
-    ├── index.md     
-    ├── about.md     (optional page)
-    ├── projects.md  (optional page)
-    └── README.md
-    ```
+    * **Answer**: Sorry about that! I tried my best to break it down but [GitHub Pages tutorial](https://docs.github.com/en/pages/quickstart) may be helpful. 
 
-## Formatting
+## Website
 
-### Changing the theme
+* **Question**: Why is my website not working? 
 
-* To change the theme, check out **[GitHub Page Themes](https://github.com/pages-themes)** where it shows you what the themes will look like. 
+    * **Answer**: When you push your changes into your GitHub repository, it can take a while to make the changes. Make sure that you are waiting until you see a _green_ check mark before you judge that your website is not working.
 
-### Markdown
-
-* If you need any help with how to format your website with Markdown, check out **[Markdown tutorial](https://www.markdownguide.org/basic-syntax/)**.
+        ![Green check mark](images/image_12.png)
 
 ## Terminal
 
-### Downloading Git
+* **Question**: Why is Git asking for a username when I try to commit?
 
-* If you get an error like this in your terminal when you first type in `git`, you might need to[ download Git](https://git-scm.com/install/windows) first and restart your VSCode.
+    * **Answer**: Git wants to know who is pushing the changes in the directory. To fix it, you have to introduce yourself first by typing in your username and email first, before your commit your changes.
 
-    ```
-    git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program.
-    ...
-    ```
-
-### Asking for a Username
-
-* When you are trying to `git commit`, but this error shows up: 
-
-    ```
-    *** Please tell me who you are. 
-    Run 
-
-    git config --global user.email "you@example.com" 
-    git config --global user.name "Your Name" 
-    
-    to set your account's default identity.
-    ```
-
-    All you have to do is telling GitHub who the author is for the changes. Therefore, you will simply follow the instruction with 
-    * `you@example.com` the email you created with GitHub
-    * `Your Name` the username you created with GitHub
+        ```
+        git config --global user.email "you@example.com"
+        git config --global user.name "Your Name"
+        git add .
+        git commit -m "Commit message"
+        git push origin main
+        ```
+        * `you@example.com` the email you created with GitHub
+        * `Your Name` the username you created with GitHub
 
 # Further Resource/Readings
 
@@ -269,6 +261,6 @@ With this README, I will go through the steps on how you too can host a website 
 
 Credit goes to: 
 
-* Group 11 (Mateo DeSousa and Andrew Driver) of the COMP 2600 class of Winter 2026.
-* The authors of [GitHub Pages](https://docs.github.com/en/pages/quickstart) that helped me get started. 
+* Group 11 (Mateo DeSousa and Andrew Driver) of the COMP 2600 class of Winter 2026 for their critiques and conversation for the improvement of my website.
+* The authors of [GitHub Pages tutorial](https://docs.github.com/en/pages/quickstart) that helped me get started. 
 * The creator of the Jekyll Hacker theme, Jason Costello. 
