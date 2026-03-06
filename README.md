@@ -34,12 +34,12 @@ The purpose of this README is to showcase how easy it is to use a static site ge
 
 ## Creating the Repository
 
-1. Refer to the upper-right side of your screen. Click the **"+"** and select **New Repository**.
+1. Click the **"+"** and select **New Repository** located at the upper-right side of your main GitHub page. 
 
-2. Under **Repository Name**, input `[username].github.io`. 
+2. Input `[username].github.io` under **Repository Name**.
     * `username` should be what your username is on GitHub. For instance, my username is `kayerm`, therefore my Repository Name is `kayerm.github.io`.
 
-3. READMEs allow for you to give some context about your website. Therefore, under the **Add README** switch, turn it **On**.
+3. Turn **On** the **Add README**.
 
     ![Creating the repository picture](images/image_01.png)
 
@@ -51,33 +51,43 @@ The purpose of this README is to showcase how easy it is to use a static site ge
 
     **NOTE**: _Only difference is that you should only have a `README.md`. We will make these files later on._
 
-5. On options on top, click on **Settings**.
+5. Click on **Settings**.
 
     ![Settings in Repository](images/image_05.png)
 
-6. With the options on the side, look for the **Code and automation** section, and click on the **Pages** tab. 
+6. Look for the **Code and automation** section, and click on the **Pages** tab. 
 
-7. Under **Build and deployment**, the dropdown under **Source** should be **Deploy from a branch**. 
+7. Change the option to **Deploy from a branch** under **Source**.
 
-8. Under **Build and deployment**, the dropdown under **Branch** should be **None**. 
+8. Change the option to **None** under **Branch**.
 
-    ![Steps 8 and 9](images/image_06.png)
+    ![Steps 7 and 8](images/image_06.png)
 
 ## Editing with Visual Studio Code (VSCode)
 
 1. Open **Visual Studio Code**.
 
-2. On the top-left corner, click on **File**, select **Open Folder**, and select the folder you want to download your repository in, then click **Select folder**. 
+2. Click on **File**. 
 
-3. Once your folder is opened, click on **Terminal**, and then **New Terminal**. A new tab should open under your _VSCode_. 
+3. Select **Open Folder**.
+
+4. Select the folder you want to download your repository in.
+
+5. Click **Select folder**. 
+
+6. Click on **Terminal**
+
+7. Click on **New Terminal**. A new tab should open under your _VSCode_. 
 
     ![VSCode Terminal](images/image_03.png)
 
-4. In your _repository_, you will see a dropdown named **Code**. Click on it and a link should appear. Copy it. 
+8. In your _repository_, click on the dropdown named **Code**. 
+
+9. Copy the link.
 
     ![Code repository](images/image_04.png)
 
-5. In your _terminal_, copy the following code below and then press **Enter**.
+10. In your _terminal_, copy the following code below.
 
     ```
     git clone https://github.com/username/username.github.io.git
@@ -85,21 +95,21 @@ The purpose of this README is to showcase how easy it is to use a static site ge
 
     **NOTE**: If there is an error associated with Git, Git was not properly installed. Refer to [prerequisites](#prerequisites).
 
-6. To go into that folder, copy the following code below and then press **Enter**.
+11. Copy the following code below to go into that directory.
 
     ```
     cd .\username.github.io\
     ```
 
-7. Type the following code below to create a new Jekyll site in the repository. 
+12. Type the following code below to create a new Jekyll site in the repository. 
 
     ```
     jekyll new --skip-bundle .
     ```
 
-8. In your directory, open `Gemfile`. 
+13. Open `Gemfile` in your directory. 
 
-9. Inside the `Gemfile`, make the changes in the following line numbers. Don't forget to **Save** the file after.
+14. Make the changes in the following line numbers.
 
     ```
     10  # gem "jekyll", "~> 4.4.1"
@@ -107,15 +117,15 @@ The purpose of this README is to showcase how easy it is to use a static site ge
     15  gem "github-pages", group: :jekyll_plugins
     ```
 
-10. In your directory, open `.gitignore`.
+15. Open `.gitignore` in your directory.
 
-11. Inside the `.gitignore`, add the line `Gemfile.lock`. Don't forget to **Save** the file after.
+16. Add the line `Gemfile.lock` inside `.gitignore`.
 
 ## Making our First Page
 
 1. In your _VSCode_, open the file named `_config.yml`.
 
-2. Edit the following file based on information you know about your website. This is what I have. Don't forget to **Save** your changes.
+2. Edit the following file based on information you know about your website. This is what I have.
 
     ```
     title: Kaye Mendoza's Resume
@@ -132,9 +142,9 @@ The purpose of this README is to showcase how easy it is to use a static site ge
 
     **NOTE**: _A list of themes is provided in the [further resources/readings](#further-resourcereadings) section._
 
-3. To create our first page, open the file named `index.markdown` or `index.md`.
+3. Open the file named `index.markdown` or `index.md` to edit our first page.
 
-4. Inside `index.md`, change the head to the one below. 
+4. Change the head to the one below inside `index.md`. 
 
     ```
     ---
@@ -151,17 +161,17 @@ The purpose of this README is to showcase how easy it is to use a static site ge
 
     * _Permalink_ will be where the page is located. `/` means that this page will be seen in `https://kayerm.github.io/`, which is the landing page of your website.
 
-5. Under the header of `index.md`, your can put whatever you'd like. As seem below, I added headers and hyperlinks to organize my data. Don't forget to **Save** your changes. 
+5. Add whatever you'd like under the header of `index.md`. As seem below, I added headers and hyperlinks to organize my data.
 
     ![Main page in VSCode](images/image_08.png)
 
     **NOTE**: _Read more about Markdown in [further resource/readings](#further-resourcereadings) section._
 
-6. Now on your terminal, make sure your are on the appropriate directory. This should be `PS [filepath]\username.github.io>`.
+6. Check if your terminal is in the appropriate directory. This should be `PS [filepath]\username.github.io>`.
 
     ![Directory](images/image_10.png)
 
-7. Now we will push our edits onto our repository. Type the following commands onto the terminal line-by-line. 
+7. Type the following commands onto the terminal line-by-line to push our edits onto our GitHub repository. 
 
     ```
     git add .
@@ -169,21 +179,21 @@ The purpose of this README is to showcase how easy it is to use a static site ge
     git push origin main
     ```
 
-8. Now go to your repository and wait until a check mark becomes present. You can do this by refreshing the page. GitHub is just making sure their checks go through. 
+8. Go to your repository and wait until a check mark becomes present. You can do this by refreshing the page. GitHub is just making sure their checks go through. 
 
     ![Loading changes](images/image_11.png)
 
     ![Changes made](images/image_12.png)
 
-9. Once you see your check mark, you can type in your website in your web browser, `username.github.io` where your first page should be present. 
+9. Type in your website in your web browser, `username.github.io` once you see the green check mark. 
 
     ![Running website](images/image_09.png)
 
 ## Adding More Pages
 
-1. Based on what you need, add another Markdown file (`filename.md`) inside your repository directory in _VSCode_.
+1. Add another Markdown file (`filename.md`) inside your GitHub repository directory in _VSCode_.
 
-2. When you open the file, start it off with the header. 
+2. Open the file, start it off with the header. 
 
     ```
     ---
@@ -201,7 +211,7 @@ The purpose of this README is to showcase how easy it is to use a static site ge
 
     * The _permalink_ will be where that page be located. In this scenario, we want the projects information to be different from the Main page. However, it is important that there is a way for you to get to `/projects/` from your `/` page or else your audience will not know this exists. 
 
-3. Now that you have the pages you need, and all these pages are linked through `index.md`, your website is good to go. Push your changes into your repository by typing the following into your directory again. 
+3. Push your changes into your repository by typing the following into your directory again. 
 
     ```
     git add .
