@@ -1,4 +1,4 @@
-# Table of Contents
+# :clipboard: Table of Contents
 
 * [Purpose](#purpose)
 * [Prerequisites](#prerequisites)
